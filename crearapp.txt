@@ -1,0 +1,7 @@
+1. Admin u1 (donde das a customize store)
+2. "Apps >" -> "App and sales channel settings"
+3. "Develop apps" -> "Create an app" -> "Develop"
+4. "Admin API integration" -> "Themes" -> "Read and write"
+5. Install app
+
+Admin api access token: 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

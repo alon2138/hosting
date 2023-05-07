@@ -1,0 +1,41 @@
+1. Install chocolatey y themekit con power shell como admin: 
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+choco install themekit
+
+npm install -g @shopify/cli @shopify/theme
+
+2. Crea un repo local y ejecutas:
+
+yarn add webpack webpack-cli resolve-url-loader css-loader postcss-loader terser-webpack-plugin mini-css-extract-plugin css-minimizer-webpack-plugin concurrently --dev
+
+3.Consigue una contraseña de tema -> Instala la app Theme Access App y abréla -> Create password -> rellena correo y nombre [shptka_59eda834fd97895074bb3206316de678]
+
+4. Consigue el ID de tu tema -> Corre en el repo local: [theme get --list -p="contraseña" -s="urltienda"]
+
+5. Configura la conexión con tu tema:
+
+theme get --password=[your-password] --store="[your-store.myshopify.com]" --themeid=[your-theme-id]
+
+shopify theme pull --store {"urltienda"}
+
+6. Visualizar cambios:
+
+shopify theme dev
+
+7. Subir cambios
+
+shopify theme push
+
+
+
+
+
+
+
+
+
+
+
+
